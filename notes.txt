@@ -1,0 +1,54 @@
+-->any tag should be closed in react(even the tags we don't close in html)
+-->for is a reserv keyword in js so use htmlFor in react
+-->JavaScript will automatically insert a semicolon after return.
+-->When you use curly braces {} in an arrow function, you must explicitly write return.
+-->in JavaScript, you must explicitly name properties when destructuring an object.
+-->props u can use props.children
+1hr23 mins
+-->Use ! when you want the opposite
+1hr43mins
+-->A controlled element is a form element whose value is managed by React state instead of the DOM.
+In Arrays
+-->filter() keeps items where the condition returns true.(for remove)
+-->ternary for update
+-->for add spread operator
+-->React automatically passes the event object e to your function handleOldFriend.
+-->[...prev, addfriend]
+--> setMyMovies((prev)=>({...prev,rating:5}));
+-->const jsonString = '{"name":"Alice","age":25}';
+
+const obj = JSON.parse(jsonString);
+
+console.log(obj.name); // Alice
+console.log(obj.age);  // 25
+==============================
+If updating object → merge with { ...prev, ...newValues }
+If updating array → merge with [ ...prev, newItem ]
+====================
+--> A Promise is an object that represents a value that will be available in the future.
+-->.then() is used to run code after the Promise is successful.
+-->navigator is a built-in browser object that gives information about the browser and device.
+If multiple setState calls happen synchronously:
+
+👉 React merges them
+👉 Only final value matters
+👉 Only one render happens
+-->create Portal from react-dom
+Re-render
+
+Same house. Just repainting the walls.
+
+Remount
+
+Bulldoze the house. Build a new one.
+
+============
+2hr :45mins
+useEffect Can't be inside a conditional Statement
+=================
+Render Prop Pattern (Important Concept)
+
+Render Prop = A component that takes a function as a child and uses it to render something.
+important for consumer as well
+3:18 mins
+===========
