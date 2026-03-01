@@ -52,3 +52,26 @@ Render Prop = A component that takes a function as a child and uses it to render
 important for consumer as well
 3:18 mins
 ===========
+🔎 Why not put the slash at the end for Provider?
+
+Because this:
+
+<UserContext.Provider />
+
+would mean:
+
+It has no children
+
+It closes itself immediately
+
+But a Provider usually wraps other components inside it:
+
+Why declare initialValue outside?
+
+Prevents it from being recreated on every render
+
+Cleaner structure
+
+Better performance in larger apps
+
+Keeps reducer logic consistent

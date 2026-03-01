@@ -33,13 +33,18 @@ import CounterEffect from "./challanges/useEffectMastery/CounterEffect";
 import FetchDataEffect from "./challanges/useEffectMastery/FetchDataEffect";
 import { createContext } from "react";
 import ComponentA from "./challanges/context-api-useContextMastery/ComponentA";
+import UserProfile from "./challanges/context-api-useContextMastery/UserProfile";
+import UserProvider from "./challanges/context-api-useContextMastery/UserContext";
+import UpdateUser from "./challanges/context-api-useContextMastery/UpdateUser";
+import CounterWithUseReducer from "./useReducerMastery/CounterWithUseReducer";
+import CounterReducer from "./useReducerMastery/CounterReducer";
 
 export const TheNameContainer= createContext();
 export const TheAgeContainer=createContext();
 function App() {
-  const [count, setCount] = useState(0);//sharing state from parent to child
-   const name ="Hima Charan"  
-   const age =24;
+  // const [count, setCount] = useState(0);//sharing state from parent to child
+  //  const name ="Hima Charan"  
+  //  const age =24;
 
   return <>
     {/* <Greet /></> */}
@@ -78,12 +83,18 @@ function App() {
     {/* <BasicEffect/> */}
     {/* <CounterEffect /> */}
     {/* <FetchDataEffect/> */}
-    <TheNameContainer.Provider value={name}>
+    {/* <TheNameContainer.Provider value={name}>
 
       <TheAgeContainer.Provider value={age}>
         <ComponentA/>
       </TheAgeContainer.Provider>
-    </TheNameContainer.Provider>
+    </TheNameContainer.Provider> */}
+    {/* <UserProvider>
+      <UserProfile/>
+      <UpdateUser/>
+    </UserProvider> */}
+    {/* <CounterWithUseReducer/> */}
+    <CounterReducer/>
   </>
 }
 export default App;
