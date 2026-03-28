@@ -75,3 +75,62 @@ Cleaner structure
 Better performance in larger apps
 
 Keeps reducer logic consistent
+
+🔄 What is React Reconciliation?
+
+Reconciliation is the process React uses to:
+
+Compare the previous UI with the new UI and update only what changed.
+
+
+A side effect is:
+
+Any operation that affects something outside the function’s local scope.
+
+
+pending action Items: 
+--useMemo
+--useCallback
+--UseRef
+
+
+htmlFor in React = for in HTML
+htmlFor is used in React for connecting a <label> to an <input> element
+
+
+shortcuts 
+================
+alt+click= to edit selected places at once
+Ctrl + Shift + L=This will select all occurrences of the current word in the file. Then type to change them all at once.
+
+With box-sizing: border-box, the width you set includes the content, padding, and border.
+
+Flex Container with 3 Items
+[1] [2] [3]  ← items
+1. space-around (what you asked)
+  [1]     [2]     [3]
+
+Each item has equal space around it.
+
+Space at the edges (before 1 and after 3) is half the space between items.
+
+2. space-between
+[1]         [2]         [3]
+
+No space at the edges, only between items.
+
+3. space-evenly
+   [1]      [2]      [3]
+
+Equal space everywhere, including edges.
+
+4. flex-start
+[1][2][3]
+
+Items stick to the start/left.
+
+5. center
+   [1][2][3]
+
+Items are centered, with equal space on the left and right.
+--> Once a matching case is found, execution continues until a break is hit

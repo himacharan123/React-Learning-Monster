@@ -36,16 +36,51 @@ import ComponentA from "./challanges/context-api-useContextMastery/ComponentA";
 import UserProfile from "./challanges/context-api-useContextMastery/UserProfile";
 import UserProvider from "./challanges/context-api-useContextMastery/UserContext";
 import UpdateUser from "./challanges/context-api-useContextMastery/UpdateUser";
-import CounterWithUseReducer from "./useReducerMastery/CounterWithUseReducer";
-import CounterReducer from "./useReducerMastery/CounterReducer";
+import CounterWithUseReducer from "./challanges/useReducerMastery/CounterWithUseReducer";
+import CounterReducer from "./challanges/useReducerMastery/CounterReducer"
+import RefExample from "./challanges/useRefMastery/RefExample";
+import FocusInput from "./challanges/useRefMastery/FocusInput";
+import Timer from "./challanges/useRefMastery/Timer";
+import UniqComponent from "./challanges/UseIdMastery/UniqComponenet";
+import CalculatorApp from "./begginer-projects/calculator-app/CalculatorApp";
+import ThemeChangeToggle from "./begginer-projects/Theme-change-Toggle/ThemeChangeToogle";
+import Testimonials from "./begginer-projects/Testimonials/Testimonials";
+import Accordian from "./accordian/Accordian";
+// import SimpleCounter from "./begginer-projects/counter/SimpleCounter";
+// import TodoApp from "./begginer-projects/Todo/TodoApp";
+// import Meals from "./begginer-projects/meals-api-project/Meal";
 
-export const TheNameContainer= createContext();
-export const TheAgeContainer=createContext();
+export const TheNameContainer = createContext();
+export const TheAgeContainer = createContext();
+
+
+
 function App() {
   // const [count, setCount] = useState(0);//sharing state from parent to child
   //  const name ="Hima Charan"  
   //  const age =24;
-
+  const accordianQNS = [
+    {
+      "question": "What is the capital of France?",
+      "answer": "Paris"
+    },
+    {
+      "question": "What is 2 + 2?",
+      "answer": "4"
+    },
+    {
+      "question": "What color is the sky?",
+      "answer": "Blue"
+    },
+    {
+      "question": "How many days are there in a week?",
+      "answer": "7"
+    },
+    {
+      "question": "What is water made of?",
+      "answer": "Hydrogen and Oxygen (H₂O)"
+    }
+  ];
   return <>
     {/* <Greet /></> */}
     {/* <Header></Header>
@@ -94,7 +129,27 @@ function App() {
       <UpdateUser/>
     </UserProvider> */}
     {/* <CounterWithUseReducer/> */}
-    <CounterReducer/>
+    {/* <CounterReducer/> */}
+    {/* <RefExample/> */}
+    {/* <FocusInput/> */}
+    {/* <Timer/> */}
+    {/* <UniqComponent/>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut obcaecati ea veritatis accusantium sapiente accusamus eaque! Nemo aliquid, sunt, enim distinctio facere, quaerat rerum reiciendis quibusdam corrupti deserunt molestiae incidunt.
+    <UniqComponent/> */}
+
+    {/* <SimpleCounter/> */}
+    {/* <TodoApp /> */}
+    {/* <Meals /> */}
+    {/* <CalculatorApp/> */}
+
+    {/* <ThemeChangeToggle/> */}
+    {/* <Testimonials /> */}
+    <div className="container">
+      {accordianQNS.map((item ,index) =>
+
+        <Accordian key={index} question={item.question} answer={item.answer} />
+      )}
+    </div>
   </>
 }
 export default App;
